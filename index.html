@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Plaza de Sergio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.3/cdn.min.js" defer></script>
+  <style>
+    body {
+      background-image: url('fondo-bar.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .animate-fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    .animate-slide-up {
+      animation: slideUp 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="text-white bg-black bg-opacity-70">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-80 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">La Plaza de Sergio</h1>
+      <div class="space-x-4">
+        <a href="#sobre" class="hover:text-yellow-400 transition duration-300">Sobre Nosotros</a>
+        <a href="#menu" class="hover:text-yellow-400 transition duration-300">Menú</a>
+        <a href="#eventos" class="hover:text-yellow-400 transition duration-300">Eventos</a>
+        <a href="#galeria" class="hover:text-yellow-400 transition duration-300">Galería</a>
+        <a href="#contacto" class="hover:text-yellow-400 transition duration-300">Contacto</a>
+        <a href="#ubicacion" class="hover:text-yellow-400 transition duration-300">Ubicación</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="h-16"></div>
+
+  <!-- Inicio -->
+  <header class="text-center py-10 bg-black bg-opacity-70 animate-fade-in">
+    <h1 class="text-4xl font-bold">La Plaza de Sergio</h1>
+    <p class="text-xl mt-2">Bienvenido al rincón con más alma de Alpera</p>
+  </header>
+
+  <!-- Sobre Nosotros -->
+  <section id="sobre" class="p-8 bg-gray-900 bg-opacity-80 animate-slide-up">
+    <h2 class="text-3xl font-semibold mb-4">Sobre Nosotros</h2>
+    <p>Soy un chico de Alpera con la ilusión de montar un bar que sea un punto de encuentro para todos. Un sitio donde se pueda comer bien, pasar buenos ratos y disfrutar del ambiente de pueblo con esencia auténtica.</p>
+  </section>
+
+  <!-- Menú -->
+  <section id="menu" class="p-8 bg-gray-800 bg-opacity-90 animate-slide-up">
+    <h2 class="text-3xl font-semibold mb-4">Menú</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="text-xl mb-2 font-semibold border-b border-white pb-1">Tapas Típicas</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Patatas Bravas</li>
+          <li>Calamares a la romana</li>
+          <li>Zapaticos</li>
+          <li>Sepia a la plancha</li>
+          <li>Queso frito</li>
+          <li>Tortilla española</li>
+          <li>Chorizo al vino</li>
+          <li>Patatas al ajillo</li>
+          <li>Albóndigas caseras</li>
+          <li>Ensaladilla rusa</li>
+          <li>Huevos rotos con jamón</li>
+          <li>Pimientos del padrón</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl mb-2 font-semibold border-b border-white pb-1">Bocadillos</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Lomo con queso</li>
+          <li>Tortilla de patatas</li>
+          <li>Jamón serrano</li>
+          <li>Atún con pimientos</li>
+          <li>Pechuga de pollo a la plancha</li>
+          <li>Chorizo frito</li>
+          <li>Vegetal con atún</li>
+          <li>Bacon con queso</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl mb-2 font-semibold border-b border-white pb-1">Bebidas</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Vinos de Alpera</li>
+          <li>Cervezas</li>
+          <li>Refrescos</li>
+          <li>Agua pequeña</li>
+          <li>Agua grande</li>
+          <li>Agua con gas</li>
+          <li>Fanta naranja</li>
+          <li>Fanta limón</li>
+          <li>Coca Cola</li>
+          <li>Coca Cola zorro</li>
+          <li>Aquarius</li>
+          <li>Sprite</li>
+          <li>Tinto de verano</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eventos -->
+  <section id="eventos" class="p-8 bg-gray-900 bg-opacity-80 animate-slide-up">
+    <h2 class="text-3xl font-semibold mb-4">Eventos</h2>
+    <p>Próximamente: noches de tapas, música en vivo y fiestas temáticas. ¡Síguenos en redes para no perderte nada!</p>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="p-8 bg-gray-800 bg-opacity-90 animate-slide-up">
+    <h2 class="text-3xl font-semibold mb-4">Galería</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img src="bar1.jpg" alt="Interior del bar" class="rounded-xl shadow-lg">
+      <img src="tapas.jpg" alt="Tapas" class="rounded-xl shadow-lg">
+      <img src="terraza.jpg" alt="Terraza del bar" class="rounded-xl shadow-lg">
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="p-8 bg-gray-900 bg-opacity-80 animate-slide-up">
+    <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+    <form class="space-y-4 max-w-md">
+      <input type="text" placeholder="Tu nombre" class="w-full p-2 rounded bg-gray-700">
+      <input type="email" placeholder="Tu email" class="w-full p-2 rounded bg-gray-700">
+      <textarea placeholder="Mensaje" class="w-full p-2 rounded bg-gray-700"></textarea>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition duration-300">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Ubicación -->
+  <section id="ubicacion" class="p-8 bg-gray-800 bg-opacity-90 animate-slide-up">
+    <h2 class="text-3xl font-semibold mb-4">Dónde Estamos</h2>
+    <p>Pl. Ayuntamiento, 17, 02690 Alpera, Albacete</p>
+    <div class="mt-4">
+      <iframe src="https://www.google.com/maps?q=Plaza+Ayuntamiento+17,+02690+Alpera,+Albacete&output=embed" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+</body>
+</html>
